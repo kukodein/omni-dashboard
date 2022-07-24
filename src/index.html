@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <main class="flex h-screen w-screen">
+    <div class="w-2/5 flex flex-col justify-center items-center">
+      <div>
+        <div class="flex flex-col gap-y-2 mb-9">
+          <h1 class="font-bold text-3xl">Sign In</h1>
+          <p>Enter your email and password to sign in!</p>
+        </div>
+        <form action="">
+          <div class="flex flex-col mb-6 gap-y-3">
+            <label for="email">Email <span class="text-rose-600">*</span></label>
+            <input name="email" id="email" placeholder="example@example.com" class="border-2 rounded-md px-6 py-1" type="text">
+          </div>
+          <div class="flex flex-col mb-6 gap-y-3">
+            <label for="password">Password <span class="text-rose-600">*</span></label>
+            <input name="password" id="password" class="border-2 rounded-md px-6 py-1" type="password">
+          </div>
+          <div class="flex gap-x-3">
+            <input name="keep-login" type="checkbox" id="keep-login">
+            <label for="keep-login">Keep me logged in</label>
+          </div>
+          <a href="./dashboard.html" class="text-center bg-primary w-full text-white py-3 rounded-md mt-4" type="submit">
+            Sign In
+          </a>
+        </form>
+      </div>
+    </div>
+    <div class="bg-login w-3/5 flex justify-center items-center rounded-bl-full">
+      <img src='../assets/img/logo.svg' alt="">
+    </div>
+  </main>
+</body>
+</html>
