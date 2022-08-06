@@ -13,43 +13,44 @@
       <h1 class="font-bold text-center text-3xl">Horizon</h1>
     </div>
     <nav class="flex flex-col mt-9 ml-8 gap-y-5">
-      <div class="flex gap-x-3 border-r-2 border-primary">
+      <a href="./dashboard.html" class="flex gap-x-3 border-r-2 border-primary items-center hover:cursor-pointer">
         <img src="../assets/img/home.svg">
         <p class="font-medium">Dashboard</p>
+      </a>
+      <a href="./product.html" class="flex gap-x-3 items-center hover:cursor-pointer">
+        <img src="../assets/img/product-inactive.svg">
+        <p class="font-medium text-secondary">Product</p>
+      </a>
+      <div class="flex gap-x-3 items-center hover:cursor-pointer">
+        <img src="../assets/img/tables-inactive.svg">
+        <p class="font-medium text-secondary">Tables</p>
       </div>
-      <div class="flex gap-x-3">
-        <img src="../assets/img/home.svg">
-        <p class="font-medium text-secondary">Dashboard</p>
+      <div class="flex gap-x-3 items-center hover:cursor-pointer">
+        <img src="../assets/img/kanban-inactive.svg">
+        <p class="font-medium text-secondary">Kanban</p>
       </div>
-      <div class="flex gap-x-3">
-        <img src="../assets/img/home.svg">
-        <p class="font-medium text-secondary">Dashboard</p>
+      <div class="flex gap-x-3 items-center hover:cursor-pointer">
+        <img src="../assets/img/profile-inactive.svg">
+        <p class="font-medium text-secondary">Profile</p>
       </div>
-      <div class="flex gap-x-3">
-        <img src="../assets/img/home.svg">
-        <p class="font-medium text-secondary">Dashboard</p>
-      </div>
-      <div class="flex gap-x-3">
-        <img src="../assets/img/home.svg">
-        <p class="font-medium text-secondary">Dashboard</p>
-      </div>
-      <div class="flex gap-x-3">
-        <img src="../assets/img/home.svg">
-        <p class="font-medium text-secondary">Dashboard</p>
+      <div class="flex gap-x-3 items-center hover:cursor-pointer">
+        <img src="../assets/img/admin-inactive.svg">
+        <p class="font-medium text-secondary">Admin</p>
       </div>
     </nav>
   </aside>
-  <main class="flex-1 bg-grayPrimary px-7 pt-11">
+  <main class="flex-1 bg-grayPrimary px-7 pt-11 min-h-fit">
     <div>
       <a href="">Pages</a>
       /
       <a href="">Dashboard</a>
     </div>
+    <!-- Start: Title and search -->
     <div class="flex justify-between items-center">
       <h1 class="text-2xl font-bold">Main Dashboard</h1>
       <div class="bg-white p-2 rounded-full gap-x-5 flex">
         <div class="flex bg-grayPrimary px-5 py-2 rounded-full">
-          <img src="../assets/img/Search Icon.svg" alt="">
+          <img src="../assets/img/Search Icon.svg" height="11" width="11" alt="">
           <input class="bg-grayPrimary focus-visible:outline-none ml-3" placeholder="Search" type="text">
         </div>
         <img src="../assets/img/notifications_none.svg" alt="">
@@ -58,6 +59,105 @@
         <img src="../assets/img/Elipse 5.png" width="41" height="41" class="rounded-full" alt="">
       </div>
     </div>
+    <!-- End: Title and search -->
+
+    <!-- Start: Card -->
+    <div class="flex gap-x-5 mt-5">
+      <div class="bg-white flex gap-x-4 rounded-lg px-4 py-5">
+        <div class="bg-grayPrimary rounded-full w-14 h-14 flex justify-center items-center">
+          <img src="../assets/img/profit.svg" height="32" width="32" alt="">
+        </div>
+        <div>
+          <h3 class="text-secondary text-sm">Earnings</h3>
+          <h1 class="text-2xl font-bold">Rp. 350.000</h1>
+        </div>
+      </div>
+
+      <div class="bg-white flex gap-x-4 rounded-lg px-4 py-5">
+        <div class="bg-grayPrimary rounded-full w-14 h-14 flex justify-center items-center">
+          <img src="../assets/img/profit.svg" height="32" width="32" alt="">
+        </div>
+        <div>
+          <h3 class="text-secondary text-sm">Spend this month</h3>
+          <h1 class="text-2xl font-bold">Rp. 350.000</h1>
+        </div>
+      </div>
+
+      <div class="bg-white flex gap-x-4 rounded-lg px-4 py-5">
+        <div class="bg-grayPrimary rounded-full w-14 h-14 flex justify-center items-center">
+          <img src="../assets/img/profit.svg" height="32" width="32" alt="">
+        </div>
+        <div>
+          <h3 class="text-secondary text-sm">Earnings</h3>
+          <h1 class="text-2xl font-bold">Rp. 350.000</h1>
+        </div>
+      </div>
+    </div>
+      <!-- End: Card -->
+
+    <!-- Start: Grafik -->
+    <div class="mt-5 flex justify-between gap-x-5 w-full">
+      <div class="bg-white px-8 py-7 rounded-md w-full">
+        <div class="flex justify-between">
+          <div class="bg-grayPrimary flex gap-x-1 rounded-md items-center py-2 px-3">
+            <img src="../assets/img/calendar_today.svg" height="18" width="18" alt="">
+            <p class="text-secondary">This Month</p>
+          </div>
+          <div class="bg-grayPrimary rounded-md p-1">
+            <img src="../assets/img/profit.svg" alt="">
+          </div>
+        </div>
+        <div class="flex w-full gap-x-3 mt-7">
+          <div class="min-w-fit">
+            <h1 class="font-bold text-2xl">Rp. 530.000</h1>
+            <div class="flex">
+              <p class="text-secondary text-sm">Toatal Spent</p>
+              <img width="20" height="20" src="../assets/img/arrow_drop_up.svg" alt="">
+              <span class="text-secondaryPositive text-sm">+2.45%</span>
+            </div>
+          </div>
+          <div class="w-full">
+            <canvas class="w-full" width="800" height="450" id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-8 py-7 rounded-md w-full">
+        <div class="flex justify-between">
+          <div class="bg-grayPrimary flex gap-x-1 rounded-md items-center py-2 px-3">
+            <img src="../assets/img/calendar_today.svg" height="18" width="18" alt="">
+            <p class="text-secondary">This Month</p>
+          </div>
+          <div class="bg-grayPrimary rounded-md p-1">
+            <img src="../assets/img/profit.svg" alt="">
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-2/4">
+            <canvas width="50" height="50" id="doughnut"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: Grafik -->
+
+    <!-- Start: Table -->
+    <div class="bg-white px-8 py-7 rounded-md w-full mt-4">
+      <div class="flex justify-between">
+        <div class="bg-grayPrimary flex gap-x-1 rounded-md items-center py-2 px-3">
+          <img src="../assets/img/calendar_today.svg" height="18" width="18" alt="">
+          <p class="text-secondary">This Month</p>
+        </div>
+        <div class="bg-grayPrimary rounded-md p-1">
+          <img src="../assets/img/profit.svg" alt="">
+        </div>
+      </div>
+      <!-- Start: table content -->
+      <div id="myGrid" class="ag-theme-alpine h-full w-full mt-4"></div>
+      <!-- End: table content -->
+    </div>
+    <!-- End: Table -->
   </main>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
