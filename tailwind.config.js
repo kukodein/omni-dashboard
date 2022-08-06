@@ -13,7 +13,9 @@ module.exports = {
         'balck': '#2B3674',
         'secondary': '#A3AED0',
         'grayPrimary': '#F4F7FE',
-        'secondaryPositive': '#05CD99'
+        'secondaryPositive': '#05CD99',
+        'blackPrimary': '#1B2559',
+        'primaryBlue': '#11047A'
       }
     },
   },
