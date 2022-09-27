@@ -16,6 +16,12 @@ module.exports = {
         'secondaryPositive': '#05CD99',
         'blackPrimary': '#1B2559',
         'primaryBlue': '#11047A'
+      },
+      borderWidth: {
+        '1': '1px'
+      },
+      content: {
+        dots: '.....................................................................'
       }
     },
   },
